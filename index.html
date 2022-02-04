@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg-color: red;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            /*cammelCase zmieniony na stardardowe background-color, dodane -- przd bg-color*/
+            font-family: Lato;
+        }
+
+        div {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 aria-main="true">Hall of fame</h1>
+    <div class="hero">
+        <!--cammelCase zmieniony na stardardowe class-->
+        <!-- <h2>Hero count: {heroCount}</h2> linijka ta nie jest potrzebna, poniewaz heroCount bedzie dodany w JS w znacznoku <p> -->
+        <!--Nie moze byc dwoch nagłówków h1 na stronie - zmieniony na h2-->
+    </div>
+    <button onclick="Hero.train()">Power UP Hero</button>
+    <script>src = "heroes-hall-of-fame.js"</script>
+    <!-- Dodana ściezka do pliku js w <script> -->
+</body>
+
+</html>
